@@ -1,45 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Cat Clicker</title>
-  <style>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      /*{
+        border: 1px solid red;
+      }*/
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #cat-list{
+        display:flex;
+        flex-direction:column;
+      }
 
-  .cats {
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-around;
-  }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Picker</title>
 
-  </style>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 align="center">Welcome to Cat Picker!</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+          <h2 align="center">Please choose a cat</h2>
+          <div id="cat-list">
+            
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-8">
+          <h2 align="center">Now Click!</h2>
+          <div id="cat-area">
+          </div>
+        </div>
+      </div>
+    </div>
 
-<body>
- 
-<div class="cats">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-	<div id="cat1">
-		<h1></h1>
-		<img src="images/cat.jpg" width="320" height="213">
-		<p>You clicked on Nisha 0 time!</p>
-	</div>
-
-	<div id="cat2">
-		<h1></h1>
-		<img src="images/cat2.jpg" width="320" height="213">
-		<p>You clicked on Angie 0 time!</p>
-	</div>
-
-</div>
-
-<script src="js/cat.js"></script>
- 
- 
-</body>
-
-
+    <script src="js/new_cat.js"></script>
+  </body>
 </html>
